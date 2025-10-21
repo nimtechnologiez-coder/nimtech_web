@@ -1,0 +1,134 @@
+/* ---------- WRAPPER ---------- */
+.techstack-wrapper {
+  padding: 80px 6%;
+  background: linear-gradient(135deg, #e0f7f7, #f0f4ff); /* modern gradient */
+  overflow: hidden;
+}
+
+/* ---------- CONTAINER ---------- */
+.techstack-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- LEFT CONTENT ---------- */
+.techstack-content {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.techstack-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #008080; /* slightly darker for contrast */
+}
+
+.techstack-blue-text {
+  background: linear-gradient(90deg, #00bfa6, #0080ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.techstack-main-text {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+.techstack-paragraph {
+  font-size: 1rem;
+  color: #333; /* darker text for readability */
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.techstack-bold {
+  font-weight: 700;
+  color: #009688;
+}
+
+.techstack-link {
+  color: #0080ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.techstack-link:hover {
+  color: #00bfa6;
+}
+
+/* ---------- RIGHT IMAGE ---------- */
+.techstack-image-wrap {
+  flex: 1 1 45%;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.techstack-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease;
+}
+
+.techstack-image-wrap:hover .techstack-image {
+  transform: scale(1.05);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 992px) {
+  .techstack-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .techstack-content,
+  .techstack-image-wrap {
+    flex: 1 1 100%;
+  }
+
+  .techstack-title {
+    font-size: 2rem;
+  }
+
+  .techstack-main-text {
+    font-size: 1.7rem;
+  }
+
+  .techstack-paragraph {
+    font-size: 0.95rem;
+  }
+
+  .techstack-image {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .techstack-wrapper {
+    padding: 60px 5%;
+  }
+
+  .techstack-title {
+    font-size: 1.8rem;
+  }
+
+  .techstack-main-text {
+    font-size: 1.5rem;
+  }
+
+  .techstack-paragraph {
+    font-size: 0.9rem;
+  }
+}

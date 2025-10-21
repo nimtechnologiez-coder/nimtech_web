@@ -1,0 +1,79 @@
+/* ---------- WRAPPER ---------- */
+.hero-wrapper {
+  background: #0fa094; /* teal background */
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ---------- SUBTEXT ---------- */
+.hero-subtext {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  opacity: 0.85;
+  color: #fff;
+}
+
+/* ---------- TITLE ---------- */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+}
+
+/* ---------- BUTTON ---------- */
+.hero-button {
+  margin-top: 24px;
+  padding: 14px 32px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 28px;
+  border: none;
+  background: #cc8212;
+  color: #f7f8f8;
+  cursor: pointer;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; /* for Link */
+  display: inline-block;
+}
+
+.hero-button:hover {
+  background: #e6f7f5;
+  color: #0d8b7d;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrapper {
+    padding: 50px 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-button {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}

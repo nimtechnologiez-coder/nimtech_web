@@ -1,0 +1,236 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafa;
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   Navbar Container
+========================= */
+.nav-container {
+  background: linear-gradient(90deg, #096658, #27c6b4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.nav-logo-img {
+  height: 44px;
+  border-radius: 8px;
+}
+
+.nav-links-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links-list li a,
+.nav-links-list li span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links-list li a:hover,
+.nav-links-list li span:hover {
+  color: #004d40;
+  transform: translateY(-2px);
+}
+
+.nav-services-section {
+  background: #1a7061;
+  color: #ffffff;
+  width: 100%;
+  padding: 40px 40px;
+  position:sticky;
+  top: 80px;
+  left: 0;
+  z-index: 900;
+  border-radius: 0 0 12px 12px;
+  animation: fadeInNav 0.3s ease-in-out;
+}
+
+@keyframes fadeInNav {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nav-services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-services-left {
+  width: 32%;
+  padding-right: 30px;
+}
+
+.nav-services-left h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #b2f2ea;
+  border-left: 5px solid #2bb5a0;
+  padding-left: 10px;
+}
+
+.nav-services-left p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e8fffa;
+}
+
+.nav-services-right {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-service-block {
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+
+.nav-service-block.development h2 { color: #b2f2ea; }
+.nav-service-block.design-cloud h2 { color: #fcd9b8; }
+.nav-service-block.technology-security h2 { color: #d7c8ff; }
+
+.nav-service-block div a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin: 4px 0;
+  padding-left: 5px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-service-block div a:hover {
+  color: #b2f2ea;
+  border-left: 3px solid #b2f2ea;
+  padding-left: 10px;
+}
+
+/* Mobile Menu */
+.nav-menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .nav-links-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    display: none;
+    background: #2bb5a0;
+    padding: 15px 0;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+  }
+
+  .nav-links-list.active {
+    display: flex;
+  }
+
+  .nav-menu-toggle {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+
+  .nav-services-section {
+    position: relative;
+    top: 0;
+    padding: 25px 20px;
+    border-radius: 0;
+    background: #1e8d7c;
+  }
+
+  .nav-services-left, .nav-services-right {
+    width: 100%;
+  }
+
+  .nav-service-block {
+    margin-bottom: 15px;
+  }
+
+  .nav-services-left h2,
+  .nav-service-block h2 {
+    color: #a0fff2;
+  }
+}
+
+/* =========================
+   Floating WhatsApp Button
+========================= */
+.whatsapp-floating-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 1.6rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsapp-floating-btn:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .whatsapp-floating-btn {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+}

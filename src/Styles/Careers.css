@@ -1,0 +1,528 @@
+/* ---------- PAGE ROOT ---------- */
+.careers-root {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* ---------- HEADER SECTION ---------- */
+.header-bg {
+  background: linear-gradient(to right, #008080, #00bfa5);
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 30px;
+  }
+}
+
+/* ---------- FILTERS SECTION ---------- */
+.filters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.filters-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.keyword-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-btn,
+.reset-btn {
+  background-color: #008080;
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-btn {
+  background-color: #ff4d4d;
+}
+
+.search-btn:hover {
+  background-color: #006666;
+}
+
+.reset-btn:hover {
+  background-color: #e63b3b;
+}
+
+/* ---------- RESULTS SECTION ---------- */
+.results-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.results-header a {
+  color: #008080;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.results-header a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- PAGINATION ROW ---------- */
+.pagination-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.sort-select {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination span {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.pagination span:hover {
+  background: #008080;
+  color: #fff;
+}
+
+.page-active {
+  background: #008080;
+  color: white;
+  font-weight: 600;
+}
+
+/* ---------- JOB CARD ---------- */
+.job-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 128, 128, 0.15);
+}
+
+.job-info {
+  flex: 1;
+  min-width: 220px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #008080;
+}
+
+.job-category,
+.job-location,
+.job-date {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #555;
+}
+
+.job-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.apply-btn {
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #006666;
+}
+
+.share-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.share-btn:hover {
+  background-color: rgba(0, 128, 128, 0.1);
+}
+
+/* ---------- APPLICATION FORM ---------- */
+.application-form {
+  max-width: 600px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-form h2 {
+  text-align: center;
+  color: #008080;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.application-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.application-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+.application-form input,
+.application-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.application-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #008080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #006666;
+}
+
+.back-btn {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+/* ---------- PAGINATION (BOTTOM) ---------- */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.page-number {
+  background: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.page-number:hover {
+  background: #008080;
+  color: white;
+}
+
+.active-page {
+  background: #008080;
+  color: white;
+  font-weight: 600;
+  border-color: #008080;
+}
+
+.pagination-btn {
+  background: #008080;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background: #006666;
+}
+
+.pagination-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .pagination-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pagination-btn {
+    width: 100%;
+  }
+}
+
+
+.back-btn:hover {
+  background-color: #b3b3b3;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  .filters-row {
+    flex-direction: column;
+  }
+
+  .results-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pagination-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .apply-btn {
+    flex: 1;
+  }
+
+  .application-form {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 26px;
+  }
+
+  .keyword-input {
+    width: 100%;
+  }
+
+  .apply-btn {
+    width: 100%;
+  }
+}
+/* ---------- MOBILE RESPONSIVE UPDATES ---------- */
+@media (max-width: 768px) {
+  /* Filters */
+  .filters-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .keyword-input {
+    width: 100%;
+  }
+
+  /* Results header */
+  .results-header {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  /* Job cards */
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .job-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .apply-btn,
+  .share-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Application Form */
+  .application-form {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .submit-btn,
+  .back-btn {
+    width: 100%;
+  }
+
+  /* Pagination - KEEP HORIZONTAL */
+  .pagination-container {
+    flex-direction: row; /* horizontal */
+    flex-wrap: wrap;     /* wrap to next line if needed */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .pagination-btn,
+  .page-number {
+    width: auto;       /* keep auto width for horizontal layout */
+    text-align: center;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+
+  .job-category,
+  .job-location,
+  .job-date {
+    font-size: 14px;
+  }
+
+  .keyword-input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .apply-btn,
+  .share-btn,
+  .submit-btn,
+  .back-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .results-section {
+    padding: 15px 10px;
+  }
+
+  .application-form {
+    padding: 15px;
+  }
+
+  /* Pagination stays horizontal for small mobile too */
+  .pagination-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .pagination-btn,
+  .page-number {
+    padding: 6px 10px;
+  }
+}

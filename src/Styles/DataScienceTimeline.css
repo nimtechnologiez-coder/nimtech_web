@@ -1,0 +1,141 @@
+/* ---------- GLOBAL ---------- */
+ body,.ds-body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d102a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- HERO ---------- */
+.ds-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #0077b6, #001d3d);
+}
+.ds-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.ds-hero p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ---------- TIMELINE ---------- */
+.ds-timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+.ds-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #00bcd4, #004d40);
+  border-radius: 2px;
+}
+
+/* ---------- TIMELINE ITEM ---------- */
+.ds-item {
+  position: relative;
+  width: 50%;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+.ds-item.left {
+  left: 0;
+  text-align: right;
+}
+.ds-item.right {
+  left: 50%;
+  text-align: left;
+}
+.ds-item::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00bcd4;
+  border: 4px solid #fff;
+  z-index: 2;
+}
+.ds-item.left::before {
+  right: -10px;
+}
+.ds-item.right::before {
+  left: -10px;
+}
+
+/* ---------- ICON ---------- */
+.ds-item i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #00bcd4;
+  transition: transform 0.3s;
+}
+.ds-item i:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* ---------- TITLE ---------- */
+.ds-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+/* ---------- CONTENT ---------- */
+.ds-content {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Small laptops / tablets */
+@media (max-width: 992px) {
+  .ds-hero h1 { font-size: 40px; }
+  .ds-title { font-size: 18px; }
+}
+
+/* Tablets / large phones: vertical stacked timeline */
+@media (max-width: 768px) {
+  .ds-timeline::before { display: none; }
+
+  .ds-item,
+  .ds-item.left,
+  .ds-item.right {
+    width: 100%;
+    left: 0 !important;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+
+  .ds-item::before {
+    left: 0;
+  }
+
+  .ds-hero h1 { font-size: 36px; }
+  .ds-hero p { font-size: 16px; }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .ds-hero h1 { font-size: 28px; }
+  .ds-hero p { font-size: 15px; }
+  .ds-content { font-size: 14px; }
+  .ds-item { padding-left: 20px; }
+  .ds-item::before { width: 16px; height: 16px; }
+}

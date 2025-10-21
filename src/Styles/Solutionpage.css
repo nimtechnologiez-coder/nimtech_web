@@ -1,0 +1,133 @@
+/* Container */
+.global-reach {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Header */
+.gr-header {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent overlay */
+}
+
+.gr-header h1 {
+  font-size: 3em;
+  letter-spacing: 1px;
+  color: #ccccff;
+  margin-bottom: 15px;
+}
+
+.gr-header p {
+  font-size: 1.4em;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Stats Section */
+.gr-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.gr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 40px;
+  border-radius: 15px;
+  min-width: 180px;
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.gr-card:hover {
+  transform: scale(1.05);
+}
+
+.gr-card h2 {
+  font-size: 2.5em;
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.gr-card p {
+  font-size: 1.2em;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Footer */
+.gr-footer {
+  font-size: 0.9em;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Responsive Styles ===== */
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .gr-header h1 {
+    font-size: 2.5em;
+  }
+  .gr-header p {
+    font-size: 1.2em;
+    max-width: 500px;
+  }
+  .gr-card {
+    padding: 20px 30px;
+    min-width: 150px;
+  }
+  .gr-card h2 {
+    font-size: 2em;
+  }
+  .gr-card p {
+    font-size: 1em;
+  }
+}
+
+/* Small devices (mobile) */
+@media (max-width: 576px) {
+  .gr-header {
+    padding: 60px 15px 30px 15px;
+  }
+  .gr-header h1 {
+    font-size: 2em;
+  }
+  .gr-header p {
+    font-size: 1em;
+    max-width: 90%;
+  }
+  .gr-stats {
+    gap: 20px;
+    padding: 30px 15px;
+  }
+  .gr-card {
+    padding: 15px 20px;
+    min-width: 120px;
+  }
+  .gr-card h2 {
+    font-size: 1.7em;
+  }
+  .gr-card p {
+    font-size: 0.95em;
+  }
+  .gr-footer {
+    font-size: 0.85em;
+    padding: 15px 10px;
+  }
+}

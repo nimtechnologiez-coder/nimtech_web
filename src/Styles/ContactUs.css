@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* ===== Page Background ===== */
+.contact-bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e8e8e4, #bed2cf, #c0bdcc); 
+  overflow: hidden;
+}
+
+/* Decorative Circle */
+.circles-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 2%, transparent 2%);
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  z-index: 1;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 2%, transparent 2%);
+}
+
+/* Page Header */
+.contact-header {
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  background: linear-gradient( #111111); /* Gradient text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Contact Form & Address Container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+/* Contact Form Card (Left) */
+.contact-card {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+ background: #1e6e64;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.4s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.contact-card .card-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFC857;
+}
+
+.contact-card .card-subtitle {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #0f1e2f, #1a2e3f, #203a43); /* Gradient input */
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.field::placeholder {
+  color: #ccc;
+}
+
+.send-btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #FFC857, #FF7E5F, #FF5E5B); /* Gradient button */
+  color: #0f1e2f;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #ffd967, #ff9e76, #ff7a5f);
+  transform: translateY(-3px);
+}
+
+.arrow-right {
+  font-weight: bold;
+}
+
+/* Address Card (Right) */
+.address-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  background-color: #1e6e64;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.4s ease;
+}
+
+.address-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.address-card .card-header {
+  color: #FFC857;
+}
+
+.address-content {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.address-content p {
+  margin: 6px 0;
+}
+
+.address-content p strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.address-content p:nth-last-child(2),
+.address-content p:last-child {
+  color: #FFC857;
+  font-weight: 600;
+}
+
+/* Map Section */
+.map-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #0f1e2f, #203a43, #274156); /* Gradient for map background */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* WhatsApp Floating Icon */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #25D366, #00c851, #00a44a); /* Gradient float */
+  color: #fff;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.modal-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #4caf50;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .contact-main-title { font-size: 2rem; }
+  .contact-container { gap: 30px; }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card, .address-card { max-width: 100%; }
+  .contact-header { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .contact-main-title { font-size: 1.6rem; }
+  .send-btn { font-size: 0.9rem; padding: 10px; }
+  .whatsapp-float { font-size: 1.8rem; padding: 12px; bottom: 20px; right: 20px; }
+}
+.address-card {
+
+  flex-direction: column;
+  justify-content: center; /* Vertical centering */
+  align-items: center;     /* Horizontal centering */
+  text-align: center;      /* Center text inside */
+}

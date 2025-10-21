@@ -1,0 +1,431 @@
+/* ===================== GLOBAL STYLES ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+ul { list-style: none; }
+a { text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ===================== HERO SECTION ===================== */
+.hero--section {
+  background: #387464; /* dark teal */
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px 80px;
+  position: relative
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-content .headline {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content .highlight {
+  color: #ffcc00;
+}
+
+.hero-content .description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-content .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* ---------- BUTTON STYLES ---------- */
+.btn {
+  padding: 14px 32px;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Access Nim Books Button */
+.get-started {
+  background: #ffffff;
+  color: #387464;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+}
+
+.get-started:hover {
+  background: #ffcc00;
+  color: #1a1a1a;
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Request Demo Button */
+.demo {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.demo:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.dashboard-img {
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+/* ===================== TESTIMONIAL SECTION ===================== */
+.testimonial-bg {
+  background: #e6f7f7;
+  padding: 80px 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.testimonial-left,
+.testimonial-right {
+  flex: 1 1 400px;
+}
+
+.testimonial-person .testimonial-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #138af5;
+}
+
+.testimonial-person .testimonial-role {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.testimonial-quote-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.testimonial-quote-box img {
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-left: 40px;
+}
+
+.testimonial-link {
+  font-weight: 600;
+  color: #0fa094;
+  transition: color 0.3s;
+}
+
+.testimonial-link:hover {
+  color: #1560c6;
+}
+
+.testimonial-link .arrow {
+  margin-left: 6px;
+}
+
+.features-app-card {
+  background-color: #f2f6fd;
+  padding: 24px 20px 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 450px;
+  box-shadow: 1px 5px 10px rgba(183, 196, 217, 0.22);
+}
+
+.features-app-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a7da2;
+  margin-bottom: 24px;
+}
+
+.features-app-title {
+  font-weight: 900;
+  line-height: 1.3;
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  color: #212121;
+}
+
+.features-app-media img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(45, 82, 228, 0.2);
+}
+
+.features-app-buttons img {
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.features-app-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* ===================== FEATURES SECTION ===================== */
+.features-bg {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-label {
+  color: #0fa094;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.features-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.features-card {
+  flex: 1 1 350px;
+  background: #abdedb;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.features-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #1560c6;
+}
+
+.features-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.payable-list .payable-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-status.overdue {
+  font-weight: 600;
+  color: #0fa094;
+}
+
+/* ===================== NIMBOOKS SECTION ===================== */
+.nimbooks-rely-bg {
+  background: #f6faf9;
+  padding: 80px 20px;
+}
+
+.nimbooks-rely-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rely-label {
+  font-weight: 600;
+  color: #0fa094;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.rely-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.rely-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.rely-card {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.rely-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #1560c6;
+}
+
+.rely-card li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* ===================== SUMMARY CARD ===================== */
+.rely-summary-card {
+  background-color: #e6f7f7;
+  padding: 40px 30px;
+  border-radius: 16px;
+  margin-top: 50px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rely-summary-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1560c6;
+  margin-bottom: 20px;
+}
+
+.rely-summary-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.rely-summary-card .rely-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.rely-summary-card .rely-list li {
+  font-weight: 600;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.rely-summary-card .rely-list li:nth-child(1) { background-color: #0fa094; }
+.rely-summary-card .rely-list li:nth-child(2) { background-color: #1560c6; }
+.rely-summary-card .rely-list li:nth-child(3) { background-color: #f39c12; }
+.rely-summary-card .rely-list li:nth-child(4) { background-color: #e74c3c; }
+
+.rely-summary-card .rely-list li:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 992px) {
+  .testimonial-container,
+  .features-row,
+  .rely-cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-img {
+    width: 90%;
+  }
+
+  .rely-summary-card .rely-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .headline {
+    font-size: 2rem;
+  }
+
+  .features-title,
+  .rely-title,
+  .testimonial-heading {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .features-card,
+  .rely-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,223 @@
+/* ---------- DISCOVER SECTION ---------- */
+.discover-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.discover-headline {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.discover-title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #1560c6;
+  letter-spacing: -2px;
+}
+
+.discover-business {
+  font-weight: 600;
+  color: #b3b3b3;
+  font-size: 3.2rem;
+}
+
+.discover-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+  margin-left: 3px;
+  margin-top: -18px;
+}
+
+.discover-potential {
+  font-weight: 700;
+  color: #b3b3b3;
+  font-size: 3.1rem;
+  margin-top: 18px;
+}
+
+.discover-subtext {
+  max-width: 540px;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.7;
+  margin-top: 38px;
+}
+
+/* ---------- TECHNOLOGIES SECTION ---------- */
+.technologies-section {
+  background: linear-gradient(135deg, #e6f7f5 0%, #b2ebe4 100%);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.tech-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0fa094;
+  margin-bottom: 10px;
+}
+
+.tech-subtitle {
+  font-size: 1.05rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+
+/* ---------- Technology Logos ---------- */
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-logos img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero-wrapper {
+  background: #0fa094;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+}
+
+.hero-button {
+  margin-top: 24px;
+  padding: 14px 32px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 28px;
+  border: none;
+  background: #fff;
+  color: #0fa094;
+  cursor: pointer;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-button:hover {
+  background: #e6f7f5;
+  color: #0d8b7d;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 992px) {
+  .discover-title,
+  .discover-business {
+    font-size: 2.5rem;
+  }
+
+  .discover-arrow {
+    width: 60px;
+  }
+
+  .discover-potential {
+    font-size: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  .tech-logos {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-logos {
+    gap: 20px;
+  }
+
+  .tech-logos img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .discover-wrapper {
+    padding: 40px 15px;
+  }
+
+  .discover-title,
+  .discover-business {
+    font-size: 2rem;
+  }
+
+  .discover-arrow {
+    width: 50px;
+  }
+
+  .discover-potential {
+    font-size: 2rem;
+  }
+
+  .discover-subtext {
+    font-size: 0.95rem;
+    margin-top: 28px;
+  }
+
+  .hero-wrapper {
+    padding: 50px 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-button {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+
+  .tech-logos {
+    gap: 15px;
+  }
+
+  .tech-logos img {
+    width: 40px;
+    height: 40px;
+  }
+}
