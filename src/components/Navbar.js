@@ -25,36 +25,15 @@ const Navbar = () => {
   const handleClickOutside = (e) => {
     if (
       !e.target.closest(".nav-services-menu") &&
-      !e.target.closest(".nav-services-section") &&
-      !e.target.closest(".nav-links-list")
+      !e.target.closest(".nav-services-section")
     ) {
-      setDropdownOpen(false);
-      setMenuActive(false);
-    }
-  };
-
-  const handleLinkClick = () => {
-    setMenuActive(false);
-    setDropdownOpen(false);
-  };
-
-  const handleScroll = () => {
-    // Check if mobile screen
-    if (window.innerWidth <= 768) {
-      setMenuActive(false);
       setDropdownOpen(false);
     }
   };
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    // Cleanup
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
   return (
@@ -71,30 +50,24 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links-list ${menuActive ? "active" : ""}`}>
-          <li>
-            <a href="/" onClick={handleLinkClick}>Home</a>
-          </li>
+          <li><a href="/">Home</a></li>
 
           <li
             className={`nav-services-menu ${dropdownOpen ? "dropdown-open" : ""}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            onClick={toggleDropdownMobile}
+            onClick={toggleDropdownMobile} 
           >
             <a href="/services">
               Services <span className="mobile-arrow">▼</span>
             </a>
           </li>
 
-          <li>
-            <a href="/product" onClick={handleLinkClick}>Products</a>
-          </li>
-          <li>
-            <a href="/careers" onClick={handleLinkClick}>Careers</a>
-          </li>
+          <li><a href="/product">Products</a></li>
+          <li><a href="/careers">Careers</a></li>
 
           <li>
-            <a href="/contact" className="contact-btn" onClick={handleLinkClick}>Contact Us</a>
+            <a href="/contact" className="contact-btn">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -108,33 +81,36 @@ const Navbar = () => {
           <div className="nav-services-container">
             <div className="nav-services-left">
               <h2>Our <span>Services</span></h2>
-              <p>Empowering businesses with digital innovation and scalable technology for a smarter future.</p>
+              <p>
+                Empowering businesses with digital innovation and scalable
+                technology for a smarter future.
+              </p>
             </div>
             <div className="nav-services-right">
               <div className="nav-service-block development">
                 <h2>Technology & Security</h2>
                 <div>
-                  <a href="/web-development" onClick={handleLinkClick}>Data & AI</a>
-                  <a href="/CYBER-SECURITY" onClick={handleLinkClick}>Cyber Security</a>
-                  <a href="/networking" onClick={handleLinkClick}>Networking</a>
-                  <a href="/digitalmarketing" onClick={handleLinkClick}>Digital Marketing</a>
+                  <a href="/web-development">Data & AI</a>
+                  <a href="/CYBER-SECURITY">Cyber Security</a>
+                  <a href="/networking">Networking</a>
+                  <a href="/digitalmarketing">Digital Marketing</a>
                 </div>
               </div>
               <div className="nav-service-block design-cloud">
                 <h2>Design & Cloud</h2>
                 <div>
-                  <a href="/ui-ux" onClick={handleLinkClick}>UI / UX Design</a>
-                  <a href="/graphicdesign" onClick={handleLinkClick}>Graphic Design</a>
-                  <a href="/iot" onClick={handleLinkClick}>IoT Solutions</a>
-                  <a href="/webhosting" onClick={handleLinkClick}>Web Hosting</a>
+                  <a href="/ui-ux">UI / UX Design</a>
+                  <a href="/graphicdesign">Graphic Design</a>
+                  <a href="/iot">IoT Solutions</a>
+                  <a href="/webhosting">Web Hosting</a>
                 </div>
               </div>
               <div className="nav-service-block technology-security">
                 <h2>Development</h2>
                 <div>
-                  <a href="/Appdevelopment" onClick={handleLinkClick}>Application Development</a>
-                  <a href="/productdevelopment" onClick={handleLinkClick}>Product Development</a>
-                  <a href="/cloudservice" onClick={handleLinkClick}>Cloud Services</a>
+                  <a href="/Appdevelopment">Application Development</a>
+                  <a href="/productdevelopment">Product Development</a>
+                  <a href="/cloudservice">Cloud Services</a>
                 </div>
               </div>
             </div>
