@@ -75,7 +75,7 @@ const ServicesPage = () => {
     <div className="services-page">
       {/* ===== HERO ===== */}
       <section className="hero">
-        <h1>Nim Technology Services</h1>
+        <h1>Nim Technologies Services</h1>
         <p>
           Providing end-to-end digital, development, and IT solutions that transform your business.
         </p>
