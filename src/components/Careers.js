@@ -3,7 +3,7 @@ import "../Styles/Careers.css";
 import emailjs from "@emailjs/browser";
 
 const jobs = [
-  { title: "Full Stack Developer", category: "Development", location: "Nagercoil, TamilNadu", datePosted: "03-Oct-2025" },
+  // { title: "Full Stack Developer", category: "Development", location: "Nagercoil, TamilNadu", datePosted: "03-Oct-2025" },
 //   { title: "Backend Developer", category: "Development", location: "Nagercoil, TamilNadu", datePosted: "30-Sep-2025" },
 //   { title: "Frontend Developer", category: "Development", location: "Nagercoil, TamilNadu", datePosted: "20-Sep-2025" },
 //   { title: "UI/UX Designer", category: "Design", location: "Nagercoil, TamilNadu", datePosted: "15-Sep-2025" },
