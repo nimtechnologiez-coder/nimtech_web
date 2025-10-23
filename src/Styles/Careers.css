@@ -190,7 +190,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 70px;
+  margin-right: 50px;
 }
 
 .apply-btn {
@@ -510,8 +511,19 @@
   }
 
   .application-form {
-    padding: 15px;
+    padding: 30px;
   }
+  .job-requirements {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  white-space: pre-line; /* Important for new line (\n) */
+}
+.job-requirements strong {
+  color: #008080;
+}
+
 
   /* Pagination stays horizontal for small mobile too */
   .pagination-container {
