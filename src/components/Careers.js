@@ -8,7 +8,7 @@ const jobs = [
     category: "Sales / Business Development",
     location: "Nagercoil, TamilNadu",
     datePosted: "23-Oct-2025",
-    requirements:
+    Qualifications:
       "Bachelor’s degree in Business Administration, Marketing, or a related field.",
     experience:
       "(1–3 years) in sales, business development, or a similar role.",
@@ -19,11 +19,26 @@ const jobs = [
     category: "Student Services / Customer",
     location: "Nagercoil, TamilNadu",
     datePosted: "23-Oct-2025",
-    requirements:
+    Qualifications:
       "Bachelor’s degree in Business, Information Technology, Education, or a related field preferred.",
     experience:
       "(1-3 years) in customer service, student relations, or client management, ideally in education or IT training.",
     skills: "Strong communication and interpersonal skills with a friendly and professional demeanor."
+  },
+
+      {
+    title: "Junior Python Full-Stack Developer",
+
+    category: "Software Development",
+    location: "Nagercoil, TamilNadu",
+    datePosted: "29-Oct-2025",
+    Qualifications:
+      "Bachelor’s degree in Computer Science, Information Technology, Software Engineering, or a related field.",
+    experience:
+      "(1-2 years) ",
+    skills: 
+"Develop, test, and maintain clean and efficient code using Python  Django, Flask, or FastAPI",
+
   },
 ];
 
@@ -191,9 +206,9 @@ const Careers = () => {
                 <div className="job-location">{job.location}</div>
                 <div className="job-date">Posted {job.datePosted}</div>
 
-                {job.requirements && (
-                  <div className="job-requirements">
-                    <strong>Requirements:</strong> {job.requirements}
+                {job.Qualifications && (
+                  <div className="job-Qualifications">
+                    <strong>Qualifications:</strong> {job.Qualifications}
                   </div>
                 )}
 
