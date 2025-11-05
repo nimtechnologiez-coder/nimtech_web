@@ -8,7 +8,7 @@
     
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content=""
     />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.jpg" /> -->
    
@@ -37,5 +37,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+     <!-- Apollo.io tracker -->
+    <script>
+      function initApollo() {
+        var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+        o.src =
+          "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" +
+          n;
+        o.async = true;
+        o.defer = true;
+        o.onload = function () {
+          window.trackingFunctions.onLoad({
+            appId: "690a2dbdf100ab0011c756b8",
+          });
+        };
+        document.head.appendChild(o);
+      }
+      initApollo();
+    </script>
+    
   </body>
 </html>
